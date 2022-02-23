@@ -11,3 +11,7 @@
 body {
   background-color: rgb(66, 43, 37);
 }
+#user-list {
+  position: absolute;
+  right: 1%;
+}

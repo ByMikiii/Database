@@ -14,6 +14,7 @@ require 'php-scripts/Connection.php';
 <body>
   <a href="pages/login.php" class= "custom-button">Login</a>
   <a href="pages/register.php" class= "custom-button">Register</a>
+  <a href="php-scripts/ListUsers.php" class= "custom-button" id="user-list">List users</a>
 
 
 </body>
