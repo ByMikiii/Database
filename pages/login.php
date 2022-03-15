@@ -8,7 +8,7 @@
 <br>
 <h2>Login Page</h2><br>
 <div class="login">
-        <form method="POST" action="login-script.php">
+        <form method="POST" action="../php-scripts/login-script.php">
             </label>
             <input type="text" name="username" id="username" placeholder="Username">
             <br><br>

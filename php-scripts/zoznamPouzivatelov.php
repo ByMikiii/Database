@@ -8,7 +8,8 @@ $result = $conn->query($sql);
 if($result->num_rows > 0){
   while($row = $result->fetch_assoc()){
     echo "ID: ". $row["id"]. "</br>";
-    echo "USERNAME: ". $row["username"]. "</br>" . "</br>";
+    echo "USERNAME: ". $row["username"]. "</br>";
+    echo "PASSWORD: ". $row["password"]. "</br>" . "</br>";
   }
 }
 
