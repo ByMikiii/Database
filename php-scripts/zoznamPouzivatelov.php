@@ -9,11 +9,8 @@
 </head>
 <body>
 <a href="../index.php" class= "custom-button" id="home">Home</a>
-<br>
-<br>
+
 <footer>Ⓒ2022 ByMikiii</footer>
-</body>
-</html>
 <?php
 require 'Connection.php';
 
@@ -23,10 +20,13 @@ $result = $conn->query($sql);
 
 if($result->num_rows > 0){
   while($row = $result->fetch_assoc()){
-    echo "<font color=white>"."ID: ". $row["id"]. "</br>";
-    echo "USERNAME: ". $row["username"]. "</br>";
-    echo "PASSWORD: ". $row["password"]. "</br>" . "</br>";
+    echo "<p style=color:white;> "."ID: ". $row["id"]. "</p>";
+    echo "<p style=color:white;> USERNAME: ". $row["username"]. "</p>"  ;
+    echo "<p style=color:white;> PASSWORD: ". $row["password"]." </p> </br>";
   }
 }
 
 ?>
+
+</body>
+</html>
