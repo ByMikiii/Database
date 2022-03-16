@@ -20,7 +20,9 @@ if($username == null){
 } else{
   if (!hash_equals($password, $passwordcheck)) {
     echo "Hesla sa nezhoduju";
-  } else {
+  } else if(!preg_match("#.*^(?=.{5,20})(?=.*[a-z])(?=.*[0-9]).*$#", $password)){
+    echo "Heslo ma menej ako 5 znakov alebo neobsahuje cislo!";
+  }else {
 
     $sql = " INSERT INTO users(username, email, password) 
   			  VALUES('$username', '$email', '$password')";
