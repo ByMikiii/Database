@@ -1,0 +1,23 @@
+body{
+  background-color: rgb(37, 37, 37);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+li,
+li:link{
+  display: inline;
+  font-size: 24px;
+  color: rgb(219, 219, 219);
+  margin-right: 24px;
+}
+li:active,
+li:hover,
+a:active,
+a:hover{
+  color: rgb(0, 0, 0);
+}
+a:link,
+a:visited {
+  color: rgb(219, 219, 219);
+  background-color: transparent;
+  text-decoration: none;
+}
