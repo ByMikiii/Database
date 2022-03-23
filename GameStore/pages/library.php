@@ -13,6 +13,8 @@
     <li><a href="store.php">Store</a></li>
     <li><a href="library.php">Library</a></li>
     <li style="float:right"> <a href="profile.php">Profile</a></li>
+    <li style="float:right"> <a href="login.php">Login</a></li>
+    <li style="float:right"> <a href="register.php">Register</a></li>
   </ul>
   <p>LIBRARY</p>
 </body>

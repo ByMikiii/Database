@@ -13,7 +13,9 @@
   <ul>
     <li><a href="./pages/store.php">Store</a></li>
     <li><a href="./pages/library.php">Library</a></li>
-    <li style="float:right"> <a href="">Profile</a></li>
+    <li style="float:right"> <a href="./pages/profile.php">Profile</a></li>
+    <li style="float:right"> <a href="./pages/login.php">Login</a></li>
+    <li style="float:right"> <a href="./pages/register.php">Register</a></li>
   </ul>
   <p>MAIN PAGE</p>
 </body>
