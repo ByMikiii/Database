@@ -21,11 +21,6 @@ body {
   position: absolute;
   right: 1%;
 }
-footer{
-  position: absolute;
-  bottom: 5px;
-  color: white;
-}
 #home {
   background-color: #5900ff;
   border: none;
