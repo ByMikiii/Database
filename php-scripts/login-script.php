@@ -2,18 +2,17 @@
 require 'connection.php';
 
 $username = $_POST['username'];
-$password = $_POST['password'];
+$hashedPassword = MD5($_POST["password"]);;
 
-
-$sql= "SELECT * FROM users WHERE username = '$username' AND password = '$password' ";
+$sql= "SELECT * FROM users WHERE username = '$username' AND password = '$hashedPassword' ";
 $result = mysqli_query($conn, $sql);
 
-if ($username == "" || $password == ""){
-  echo "Nezadali ste vsetky potrebne udaje";
-}else if($result->num_rows > 0) {
+if($result->num_rows ==1) {
   $row = mysqli_fetch_assoc($result);
-  $_SESSION['username'] = $row['username'];
-  echo "Welcome ".$username."!";
+  session_start();
+  $_SESSION['username'] = $username;
+  
+  header("Location: ../index.php");
 } else {
-  echo "Nespravne meno alebo heslo!";
+  header ("Location: ../pages/login.php?message=Zle meno alebo heslo!");
 }

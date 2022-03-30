@@ -1,25 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Login</title>
-<link rel= "stylesheet" href="../CSS/login_style.css">
-</head>
-<body>
-<a href="../index.php" class= "custom-button" id="home">Home</a>
-<br>
+<?php 
+include('../parts/header.php');
+
+$error = isset($_GET['message']) ? $_GET["message"] : "";
+?>
+
 <div class="login">
 <h1>Login</h1><br>
         <form method="POST" action="../php-scripts/login-script.php">
-            <input type="text" name="username" id="username" placeholder="Meno">
+            <input type="text" name="username" id="username" placeholder="Meno" required>
             <br>
-            <input type="password" name="password" id="password" placeholder="Heslo">
+            <input type="password" name="password" id="password" placeholder="Heslo" required>
             <br>
             <input type="submit" value="Login">
+            <p> <?php echo $error ?></p>
             <br>
             Are you new?  <a href="register.php"> Register</a>
             <br>
         </form> 
 </div>
-<footer>Ⓒ2022 ByMikiii</footer>
-</body>
-</html>
+<?php include('../parts/footer.php') ?>
