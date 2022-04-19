@@ -33,13 +33,13 @@ session_start();
       </div>
       <?php else : ?>
         <div class="d-flex aling-items-center">
-              <div class="login-data">
-             <p class=login-username>
-              <?php
-             //echo $_SESSION["avatar"];
-             echo $_SESSION["username"];
-              ?></p>
-             </div>
+             
+        <div class="login-data">           
+        <a href="/Database/pages/profile.php?id=<?php echo $_SESSION["id"]?>" ><img class='profile-picture' src="<?php echo $_SESSION["avatar-path"]?>" alt="Profile Picture"></a>
+
+            <span id="login-username"> <?php echo $_SESSION["username"] ?></span>
+
+            </div>
               <a href="/Database/phpscripts/logout.php" class= "btn btn-danger">Log Out</a>
         </div>
         <?php endif; ?>
