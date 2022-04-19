@@ -1,20 +1,30 @@
 <?php require '../parts/header.php'; ?>
 
 <?php
-require '../php-scripts/connection.php';
 
-$sql = "SELECT id, username, password, avatar FROM users";
-$result = $conn->query($sql);
+require '../phpscripts/getAllUsers.php';
 
-
-if($result->num_rows > 0){
-  while($row = $result->fetch_assoc()){
-    echo "<p style=color:white;> "."ID: ". $row["id"]. "</p>";
-    echo "<p style=color:white;> USERNAME: ". $row["username"]. "</p>"  ;
-    echo "<p style=color:white;> PASSWORD: ". $row["password"]." </p> </br>";
-  }
-}
 
 ?>
-
-<?php require '../parts/footer.php'; ?>
+<div class= zoznamPouzivatelov>
+<ul class="list-group list-group-horizontal">
+  <li style= "background-color: blue;" class="list-group-item">ID</li>
+  <li style= "background-color: blue;" class="list-group-item">Avatar</li>
+  <li style= "background-color: blue;" class="list-group-item">Username</li>
+  <li style= "background-color: blue;" class="list-group-item">Email</li>
+  <li style= "background-color: blue;" class="list-group-item">Time of registration</li>
+  <li style= "background-color: blue;" class="list-group-item">Akcie</li>
+</ul>
+<?php foreach ($users as $user) :  ?>
+  <ul class="list-group list-group-horizontal">
+<li class="list-group-item"> <?php echo $user["id"] ?></li>
+  <li class="list-group-item"> <?php  ?></li>
+  <li class="list-group-item"> <?php echo $user["username"] ?></li>
+  <li class="list-group-item"><?php echo $user["email"] ?></li>
+  <li class="list-group-item"><?php echo $user["created_at"] ?></li>
+  <li class="list-group-item">Akcie</li>
+</ul>
+</div>
+<?php
+ endforeach;
+ require '../parts/footer.php'; ?>

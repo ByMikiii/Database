@@ -21,11 +21,11 @@ session_start();
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/Database/index.php">Home</a>
+          <a class="nav-link active" aria-current="page" href="/Database/pages/zoznamPouzivatelov.php">List of users</a>
         </li>
       </ul>
       <?php if (!isset($_SESSION["username"])) : ?>
       <div>
-      <a href="/Database/pages/zoznamPouzivatelov.php" class= "btn btn-light">Zoznam Pouzivatelov</a>
         <a href="/Database/pages/login.php" class= "btn btn-success">Login</a>
         <a href="/Database/pages/register.php" class= "btn btn-danger">Register</a>
       </div>
