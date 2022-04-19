@@ -78,6 +78,7 @@ input[type=submit]:hover{
 footer{
   position: fixed;
   bottom: 5px;
+  left: 5px;
   color: white;
 }
 .carousel-item img {
