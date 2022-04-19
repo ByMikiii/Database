@@ -1,5 +1,5 @@
 <?php
-require './php-scripts/connection.php';
+require './phpscripts/connection.php';
 include('./parts/header.php') 
 ?>
 

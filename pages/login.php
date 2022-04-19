@@ -6,7 +6,7 @@ $error = isset($_GET['message']) ? $_GET["message"] : "";
 
 <div class="login">
 <h1>Login</h1><br>
-        <form method="POST" action="../php-scripts/login-script.php">
+        <form method="POST" action="../phpscripts/login-script.php">
             <input type="text" name="username" id="username" placeholder="Meno" required>
             <br>
             <input type="password" name="password" id="password" placeholder="Heslo" required>

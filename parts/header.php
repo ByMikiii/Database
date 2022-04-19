@@ -19,8 +19,10 @@ session_start();
     <a class="navbar-brand" href="#">ByMikiii</a>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/Database/index.php">Home</a>
+        </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/Database/index.php">Home</a>
           <a class="nav-link active" aria-current="page" href="/Database/pages/zoznamPouzivatelov.php">List of users</a>
         </li>
       </ul>
@@ -31,8 +33,14 @@ session_start();
       </div>
       <?php else : ?>
         <div class="d-flex aling-items-center">
-              <p class=login-info>Ste prihlaseny ako: <?php echo $_SESSION["username"] ?></p>
-              <a href="/Database/php-scripts/logout.php" class= "btn btn-danger">Log Out</a>
+              <div class="login-data">
+             <p class=login-username>
+              <?php
+             //echo $_SESSION["avatar"];
+             echo $_SESSION["username"];
+              ?></p>
+             </div>
+              <a href="/Database/phpscripts/logout.php" class= "btn btn-danger">Log Out</a>
         </div>
         <?php endif; ?>
     </div>

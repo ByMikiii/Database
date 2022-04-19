@@ -6,25 +6,30 @@ require '../phpscripts/getAllUsers.php';
 
 
 ?>
-<div class= zoznamPouzivatelov>
-<ul class="list-group list-group-horizontal">
-  <li style= "background-color: blue;" class="list-group-item">ID</li>
-  <li style= "background-color: blue;" class="list-group-item">Avatar</li>
-  <li style= "background-color: blue;" class="list-group-item">Username</li>
-  <li style= "background-color: blue;" class="list-group-item">Email</li>
-  <li style= "background-color: blue;" class="list-group-item">Time of registration</li>
-  <li style= "background-color: blue;" class="list-group-item">Akcie</li>
-</ul>
+<div class="listUsers">
+<ul class="list">
+  <li> 
+      <span class='li-nametag'>ID</span>
+      <span class='li-nametag'>Avatar</span>
+      <span class='li-nametag'>Username</span>
+      <span class='li-nametag'>Email</span>
+      <span class='li-nametag'>Time of registreation</span>
+      <span class='li-nametag'>Akcie</span>
+  </li> 
+
 <?php foreach ($users as $user) :  ?>
-  <ul class="list-group list-group-horizontal">
-<li class="list-group-item"> <?php echo $user["id"] ?></li>
-  <li class="list-group-item"> <?php  ?></li>
-  <li class="list-group-item"> <?php echo $user["username"] ?></li>
-  <li class="list-group-item"><?php echo $user["email"] ?></li>
-  <li class="list-group-item"><?php echo $user["created_at"] ?></li>
-  <li class="list-group-item">Akcie</li>
+  <li> 
+    <span><?php echo $user["id"] ?></span>
+    <span> <a href="./profile.php?id=<?php echo $user["id"]?>" ><img class='profile-picture' src="/Database/Images/profile.png" alt="Profile Picture"></a></span>
+    <span><?php echo $user["username"] ?></span>
+    <span><?php echo $user["email"] ?></span>
+    <span><?php echo $user["created_at"] ?></span>
+    <span><?php echo "Akcie" ?></span>
+</li>
+<?php
+ endforeach;
+?>
 </ul>
 </div>
 <?php
- endforeach;
  require '../parts/footer.php'; ?>

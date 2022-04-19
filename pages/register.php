@@ -2,7 +2,7 @@
         <div class="register">
         <h1>Register</h1>
         <br>
-        <form action="../php-scripts/register-script.php" method="POST">
+        <form action="../phpscripts/register-script.php" method="POST">
             <input type="text" name="username" id="username" placeholder="Meno" required>
             <br>
             <input type="email" name="email" id="email" placeholder="Email" required>

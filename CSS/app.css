@@ -80,11 +80,60 @@ footer{
   bottom: 5px;
   color: white;
 }
-.login-info {
-  color: white;
-}
 .carousel-item img {
   width: auto !important;
   height: 400px;
   max-height: 400px;
+}
+.login-username{
+   color: white;
+   font-weight: bold;
+}
+.login-data{
+  position: absolute;  
+  text-align: center;
+  left: 50%; 
+  transform: translate(-50%,);
+}
+.profile-picture{
+  width: 40px;
+  height: auto;
+}
+
+.listUsers {
+    position: absolute;
+    top: 32%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: table;
+  white-space: nowrap;
+  width: 1000px;
+
+}
+
+.list li {
+  background-color: #f0f0f0;
+  display: table-row;
+  color: #5c5c5c;
+}
+
+.li-nametag{
+  background-color: #1c1a22;
+  color: rgb(214, 214, 214);
+  font-weight: bold;
+}
+
+.list span {
+  text-align: center;
+  display: table-cell;
+  padding: 2px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  vertical-align: middle; 
 }
