@@ -25,6 +25,12 @@ session_start();
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/Database/pages/zoznamPouzivatelov.php">List of users</a>
         </li>
+        <li class="nav-item">
+        <a href="/Database/pages/articles.php?page=1" class= "btn btn-light">Articles</a>
+        </li>
+        <li class="nav-item">
+        <a href="/Database/pages/createArticle.php" class= "btn btn-light">Create Article</a>
+        </li>
       </ul>
       <?php if (!isset($_SESSION["username"])) : ?>
       <div>

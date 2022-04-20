@@ -99,7 +99,7 @@ footer{
 
 .listUsers {
     position: absolute;
-    top: 32%;  
+    top: 60%;  
     left: 50%; 
     transform: translate(-50%, -50%);
 }
@@ -146,4 +146,21 @@ width: 80px;
 }
 .login-data{
   display: inline grid;
+}
+.card{
+ margin: 50px;
+}
+#art-heading{
+  color: white;
+  text-align: center;
+}
+.card-autor{
+  color: rgb(160, 160, 160);
+}
+#pagination{
+  position: absolute;
+  margin: auto;
+  margin-top: 30px;
+  width: 19%;
+  padding: 10px;
 }

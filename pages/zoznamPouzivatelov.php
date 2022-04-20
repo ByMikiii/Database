@@ -13,7 +13,7 @@ require '../phpscripts/getAllUsers.php';
       <span class='li-nametag'>Avatar</span>
       <span class='li-nametag'>Username</span>
       <span class='li-nametag'>Email</span>
-      <span class='li-nametag'>Time of registreation</span>
+      <span class='li-nametag'>Time of registration</span>
       <span class='li-nametag'>Akcie</span>
   </li> 
 
