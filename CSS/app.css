@@ -99,7 +99,7 @@ footer{
 
 .listUsers {
     position: absolute;
-    top: 60%;  
+    top: 35%;  
     left: 50%; 
     transform: translate(-50%, -50%);
 }
@@ -153,6 +153,7 @@ width: 80px;
 #art-heading{
   color: white;
   text-align: center;
+  margin-top: 15px;
 }
 .card-autor{
   color: rgb(160, 160, 160);
@@ -191,8 +192,8 @@ width: 80px;
 }
 .card{
   width: 400px;
-  margin-bottom: 30px;
-  margin-top: 60px;
+  margin-bottom: 45px;
+  margin-top: 45px;
 }
 .cards{
   display: grid;
