@@ -2,12 +2,19 @@
 $pathToIcon = '/Database/Images/monkaH.png';
 $title = 'Articles';
 include('../parts/header.php');
-require '../phpscripts/getAllArticles.php';
+include('../phpscripts/connection.php');
 
-$startgroup = '<div class="card-group">';
-$page_limit = 10;
-$page = (isset($_GET['page']) && $_GET['page'] > 0) ? intval($_GET['page']) : 1;
-$offset = ($page > 1) ? ($page_limit * ($page - 1)) : 0;
+$limitPerPage = 12;
+$page = $_GET["page"];
+$offset = ($page - 1) * $limitPerPage;
+
+$sql = "SELECT * FROM articles ORDER BY id DESC limit $limitPerPage OFFSET $offset";
+$result = $conn->query($sql);
+$articles = [];
+
+while($article = $result->fetch_assoc()){
+  array_push($articles, $article);
+}
 ?>
 
   <h1 id='art-heading'>Articles</h1>
