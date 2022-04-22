@@ -99,7 +99,7 @@ footer{
 
 .listUsers {
     position: absolute;
-    top: 35%;  
+    top: 325px;  
     left: 50%; 
     transform: translate(-50%, -50%);
 }
