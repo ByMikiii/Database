@@ -1,4 +1,6 @@
 <?php 
+$pathToIcon = '/Database/Images/monkaH.png';
+$title = 'Login';
 include('../parts/header.php');
 
 $error = isset($_GET['message']) ? $_GET["message"] : "";

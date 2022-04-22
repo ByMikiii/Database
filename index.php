@@ -1,4 +1,6 @@
 <?php
+$pathToIcon = '/Database/Images/monkaH.png';
+$title = 'Main Page';
 require './phpscripts/connection.php';
 include('./parts/header.php')
 ?>

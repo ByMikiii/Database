@@ -1,4 +1,8 @@
-<?php include('../parts/header.php') ?>
+<?php
+$pathToIcon = '/Database/Images/monkaH.png';
+$title = 'Register';
+include('../parts/header.php') 
+?>
         <div class="register">
         <h1>Register</h1>
         <br>

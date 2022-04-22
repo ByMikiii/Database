@@ -1,7 +1,9 @@
 <?php 
+$pathToIcon = '/Database/Images/monkaH.png';
+$title = 'Articles';
 include('../parts/header.php');
 require '../phpscripts/getAllArticles.php';
-$cislo = 1;
+
 $startgroup = '<div class="card-group">';
 $page_limit = 10;
 $page = (isset($_GET['page']) && $_GET['page'] > 0) ? intval($_GET['page']) : 1;
@@ -9,15 +11,10 @@ $offset = ($page > 1) ? ($page_limit * ($page - 1)) : 0;
 ?>
 
   <h1 id='art-heading'>Articles</h1>
-
-  <div class="card-group">
+  <div class="cards">
   
-  <?php foreach ($articles as $article) :  
-    if($cislo % 3 == 1){
-      echo $startgroup;
-    }
-    ?>
-  <div class="card">
+  <?php foreach ($articles as $article) :  ?>
+  <div class="card" >
     <img src="<?php echo $article['cover_image']?>" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title"><?php echo $article['title']?></h5>
@@ -28,15 +25,9 @@ $offset = ($page > 1) ? ($page_limit * ($page - 1)) : 0;
       <small class="text-muted"><?php echo $article['create_time']?></small>
     </div>
   </div>
-  <?php
-  if($cislo % 3 == 0){
-      echo "</div>";
-    }
-    $cislo++;
-    
- endforeach;
-?>
-</div>
+
+  <?php endforeach;?>
+
 </div>
 
 <div id="pagination">

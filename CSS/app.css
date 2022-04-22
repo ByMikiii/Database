@@ -11,10 +11,10 @@
 }
 .custom-button:active,
 .custom-button:hover{
-  background-color: #ffffff54;
+  background-color: #000000;
 }
 body {
-  background-color: black;
+  background-color: rgb(8, 8, 12);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #user-list {
@@ -176,12 +176,45 @@ width: 80px;
 }
 #pagination{
   height: 38px;
-  width: 244px;
+  width: 245px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 .nav-btn{
   margin-left: 10px;
+}
+.navbar-brand{
+  margin-right: 35px;
+  font-weight: bold;
+}
+.card{
+  width: 400px;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+.cards{
+  display: grid;
+  grid-template-columns: 500px 500px 500px;
+  justify-content: center;
+}
+
+@media (max-width: 1500px){
+  .cards{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1000px){
+  .cards{
+    display: grid;
+    grid-template-columns: 500px;
+    justify-content: center;
+  }
+}
+.navbar{
+  border-bottom: 1px solid rgb(231, 231, 231);
 }

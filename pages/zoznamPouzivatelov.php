@@ -1,10 +1,8 @@
-<?php require '../parts/header.php'; ?>
-
-<?php
-
+<?php 
+$pathToIcon = '/Database/Images/monkaH.png';
+$title = 'List of Users';
+require '../parts/header.php'; 
 require '../phpscripts/getAllUsers.php';
-
-
 ?>
 <div class="listUsers">
 <ul class="list">
