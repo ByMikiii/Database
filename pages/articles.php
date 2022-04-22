@@ -18,7 +18,7 @@ $offset = ($page > 1) ? ($page_limit * ($page - 1)) : 0;
     }
     ?>
   <div class="card">
-    <img src="<?php echo $article['image']?>" class="card-img-top" alt="...">
+    <img src="<?php echo $article['cover_image']?>" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title"><?php echo $article['title']?></h5>
       <h6 class="card-autor"><?php echo $article['autor']?></h6>
@@ -36,6 +36,7 @@ $offset = ($page > 1) ? ($page_limit * ($page - 1)) : 0;
     
  endforeach;
 ?>
+</div>
 </div>
 
 <div id="pagination">

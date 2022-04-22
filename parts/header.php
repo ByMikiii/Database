@@ -20,16 +20,16 @@ session_start();
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="/Database/index.php">Home</a>
+        <a href="/Database/index.php" class= "btn btn-light nar-btn">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/Database/pages/zoznamPouzivatelov.php">List of users</a>
+          <a href="/Database/pages/zoznamPouzivatelov.php" class= "btn btn-light nav-btn">List of users</a>
         </li>
         <li class="nav-item">
-        <a href="/Database/pages/articles.php?page=1" class= "btn btn-light">Articles</a>
+        <a href="/Database/pages/articles.php?page=1" class= "btn btn-light nav-btn">Articles</a>
         </li>
         <li class="nav-item">
-        <a href="/Database/pages/createArticle.php" class= "btn btn-light">Create Article</a>
+        <a href="/Database/pages/createArticle.php" class= "btn btn-light nav-btn">Create Article</a>
         </li>
       </ul>
       <?php if (!isset($_SESSION["username"])) : ?>

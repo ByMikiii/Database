@@ -1,6 +1,6 @@
 <?php
 require './phpscripts/connection.php';
-include('./parts/header.php') 
+include('./parts/header.php')
 ?>
 
 <main class="container">
