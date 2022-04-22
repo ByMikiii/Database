@@ -10,9 +10,11 @@ $passwordcheck = $_POST['password_check'];
                     MD5($_POST['password_check']);
 
   if (!hash_equals($password, $passwordcheck)) {
-    echo "Hesla sa nezhoduju";
+    $error = "Hesla sa nezhoduju";
+    header('Location: /Database/pages/register.php?message='.$error);
   } else if(!preg_match("#.*^(?=.{5,20})(?=.*[a-z])(?=.*[0-9]).*$#", $password)){
-    echo "Heslo ma menej ako 5 znakov alebo neobsahuje cislo!";
+    $error = "Heslo ma menej ako 5 znakov alebo neobsahuje cislo!";
+    header('Location: /Database/pages/register.php?message='.$error);
   }else {
 
     $sql = " INSERT INTO users(username, email, password) 

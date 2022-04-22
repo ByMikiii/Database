@@ -13,11 +13,9 @@ $error = isset($_GET['message']) ? $_GET["message"] : "";
             <br>
             <input type="password" name="password" id="password" placeholder="Heslo" required>
             <br>
-            <input type="submit" value="Login">
-            <p> <?php echo $error ?></p>
-            <br>
+            <button class="submitbtn" type="submit">Login</button>
+            <p class='error'> <?php echo $error ?></p>
             Are you new?  <a href="register.php"> Register</a>
-            <br>
         </form> 
 </div>
 <?php include('../parts/footer.php') ?>

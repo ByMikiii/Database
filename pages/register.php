@@ -1,7 +1,10 @@
 <?php
 $pathToIcon = '/Database/Images/monkaH.png';
 $title = 'Register';
-include('../parts/header.php') 
+include('../parts/header.php');
+
+
+$error = isset($_GET['message']) ? $_GET["message"] : "";
 ?>
         <div class="register">
         <h1>Register</h1>
@@ -15,10 +18,9 @@ include('../parts/header.php')
             <br>
             <input type="Password" name="password_check" id="password_check" placeholder="Zopakuj heslo" required>
             <br>
-            <input type="submit" value="Register">
-            <br><br>
+            <button class="submitbtn" type="submit">Register</button>
+            <p class='error'> <?php echo $error ?></p>
             Already user?  <a  href="login.php">Login </a>
-            <br>
         </form> 
 </div>
 <?php include('../parts/footer.php') ?>

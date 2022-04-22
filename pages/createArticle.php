@@ -13,7 +13,7 @@ include('../parts/header.php')
             <br>
             <textarea class='art-textarea' name="articletext" placeholder="Text" required></textarea>
             <br>
-            <input id="acticle-submit" type="submit" value="Create Article">
+            <button class="submitbtn" type="submit">Create</button>
             <br>
         </form> 
 </div>
