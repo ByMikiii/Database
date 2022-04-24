@@ -1,5 +1,5 @@
 <?php 
-$pathToIcon = '/Database/Images/monkaH.png';
+$pathToIcon = '/Images/monkaH.png';
 $title = 'Login';
 include('../parts/header.php');
 

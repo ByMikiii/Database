@@ -1,5 +1,5 @@
 <?php
-$pathToIcon = '/Database/Images/monkaH.png';
+$pathToIcon = '/Images/monkaH.png';
 $title = 'Profile';
 require '../parts/header.php'; 
 require '../phpscripts/getAllUsers.php';
