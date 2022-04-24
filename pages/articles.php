@@ -8,7 +8,7 @@ $limitPerPage = 12;
 $page = $_GET["page"];
 $offset = ($page - 1) * $limitPerPage;
 
-$sql = "SELECT * FROM articles ORDER BY id DESC limit $limitPerPage OFFSET $offset";
+$sql = "SELECT * FROM articles ORDER BY article_id DESC limit $limitPerPage OFFSET $offset";
 $result = $conn->query($sql);
 $articles = [];
 

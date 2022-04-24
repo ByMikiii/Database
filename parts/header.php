@@ -17,7 +17,7 @@ session_start();
 <header>
 <nav class="navbar navbar-expand-lg navbar-dark bg-none">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/Database">ByMikiii</a>
+    <a class="navbar-brand" href="/">ByMikiii</a>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
@@ -42,7 +42,7 @@ session_start();
         <div class="d-flex aling-items-center">
              
         <div class="login-data">           
-        <a href="/pages/profile.php?id=<?php echo $_SESSION["id"]?>" ><img class='profile-picture' src="<?php echo $_SESSION["avatar-path"]?>" alt="Profile Picture"></a>
+        <a href="/pages/profile.php?id=<?php echo $_SESSION["user_id"]?>" ><img class='profile-picture' src="<?php echo $_SESSION["avatar-path"]?>" alt="Profile Picture"></a>
 
             <span id="login-username"> <?php echo $_SESSION["username"] ?></span>
 

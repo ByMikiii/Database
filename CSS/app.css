@@ -25,14 +25,14 @@ input{
 input:active,
 input:hover,
 input:focus{
-  border-bottom: 3px solid #5900ff;
+  border-bottom: 3px solid #1c1a22;
 }
 .submitbtn{
   width: 80px;
   height: 24px;
   margin-top: 20px;
   margin-bottom: 10px;
-  background-color: #5900ff;
+  background-color: #1c1a22;
   border: none;
   color: white;
   text-align: center;
@@ -60,7 +60,7 @@ footer{
 .login-data{
   position: absolute;  
   text-align: center;
-  left: 50%; 
+  left: 47%; 
   transform: translate(-50%,);
 }
 .profile-picture{
@@ -187,5 +187,19 @@ width: 80px;
 }
 .error{
   color: red;
-  
+}
+.container{
+  position: relative;
+  margin-bottom: 30px;
+}
+#h2-welcome{
+  color: white;
+  text-align: center;
+}
+#twitch-icon{
+  width: 38px;
+  height: auto;
+  position: fixed;
+  bottom: 4px;
+  right: 4px;
 }

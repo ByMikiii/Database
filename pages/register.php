@@ -10,13 +10,13 @@ $error = isset($_GET['message']) ? $_GET["message"] : "";
         <h1>Register</h1>
         <br>
         <form action="../phpscripts/register-script.php" method="POST">
-            <input type="text" name="username" id="username" placeholder="Meno" required>
+            <input type="text" name="username" id="username" placeholder="Meno" required autocomplete="off">
             <br>
-            <input type="email" name="email" id="email" placeholder="Email" required>
+            <input type="email" name="email" id="email" placeholder="Email" required autocomplete="off">
             <br>
-            <input type="Password" name="password" id="password" placeholder="Heslo" required>
+            <input type="Password" name="password" id="password" placeholder="Heslo" required autocomplete="off">
             <br>
-            <input type="Password" name="password_check" id="password_check" placeholder="Zopakuj heslo" required>
+            <input type="Password" name="password_check" id="password_check" placeholder="Zopakuj heslo" required autocomplete="off">
             <br>
             <button class="submitbtn" type="submit">Register</button>
             <p class='error'> <?php echo $error ?></p>

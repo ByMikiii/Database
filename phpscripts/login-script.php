@@ -7,14 +7,14 @@ $hashedPassword = MD5($_POST["password"]);;
 $sql= "SELECT * FROM users WHERE username = '$username' AND password = '$hashedPassword' ";
 $result = mysqli_query($conn, $sql);
 
-$sql2 = "SELECT avatar, id FROM users WHERE username = 'Jozef'";
+$sql2 = "SELECT avatar, user_id FROM users";
 $result2 = mysqli_query($conn, $sql2);
 
 if (mysqli_num_rows($result2) > 0) {
   // output data of each row
   while($row = mysqli_fetch_assoc($result2)) {
     $avatar = $row["avatar"];
-    $id = $row["id"];
+    $id = $row["user_id"];
   }
 }
 
@@ -23,7 +23,7 @@ if($result->num_rows == 1) {
   session_start();
   $_SESSION['username'] = $username;
   $_SESSION['avatar-path'] = $avatar;
-  $_SESSION['id'] = $id;
+  $_SESSION['user_id'] = $id;
   
   header("Location: ../index.php");
 } else {

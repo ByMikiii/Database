@@ -9,9 +9,9 @@ $error = isset($_GET['message']) ? $_GET["message"] : "";
 <div class="login">
 <h1>Login</h1><br>
         <form method="POST" action="../phpscripts/login-script.php">
-            <input type="text" name="username" id="username" placeholder="Meno" required>
+            <input type="text" name="username" id="username" placeholder="Meno" required autocomplete="off">
             <br>
-            <input type="password" name="password" id="password" placeholder="Heslo" required>
+            <input type="password" name="password" id="password" placeholder="Heslo" required autocomplete="off">
             <br>
             <button class="submitbtn" type="submit">Login</button>
             <p class='error'> <?php echo $error ?></p>

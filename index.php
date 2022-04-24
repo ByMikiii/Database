@@ -28,7 +28,7 @@ include('./parts/header.php')
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-
 </main>
+<h2 id='h2-welcome'>Welcome! 😘</h2>
 
   <?php include('./parts/footer.php')?>

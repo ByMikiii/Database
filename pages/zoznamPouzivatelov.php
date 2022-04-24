@@ -17,11 +17,11 @@ require '../phpscripts/getAllUsers.php';
 
 <?php foreach ($users as $user) :  ?>
   <li> 
-    <span> <?php echo $user["id"] ?> </span>
+    <span> <?php echo $user["user_id"] ?> </span>
     <span> <img class='profile-picture' src="<?php echo $user["avatar"]?>" alt="Profile Picture"></></span>
-    <span> <a  href="./profile.php?id=<?php echo $user["id"]?>"><?php echo $user["username"] ?></a></span>
+    <span> <a  href="./profile.php?id=<?php echo $user["user_id"]?>"><?php echo $user["username"] ?></a></span>
     <span><?php echo $user["email"] ?></span>
-    <span><?php echo $user["created_at"] ?></span>
+    <span><?php echo $user["date_created"] ?></span>
     <span><?php echo "Akcie" ?></span>
 </li>
 <?php
