@@ -5,7 +5,11 @@ include('../parts/header.php');
 include('../phpscripts/connection.php');
 
 $limitPerPage = 12;
+if(!isset($_GET["page"])){
+  $page = 1;
+}else {
 $page = $_GET["page"];
+}
 $offset = ($page - 1) * $limitPerPage;
 
 $sql = "SELECT * FROM articles ORDER BY article_id DESC limit $limitPerPage OFFSET $offset";
@@ -41,9 +45,9 @@ while($article = $result->fetch_assoc()){
 <nav aria-label="Page navigation example">
   <ul class="pagination">
     <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-    <li class="page-item"><a class="page-link" href="/Database/pages/articles.php?page=1">1</a></li>
-    <li class="page-item"><a class="page-link" href="/Database/pages/articles.php?page=2">2</a></li>
-    <li class="page-item"><a class="page-link" href="/Database/pages/articles.php?page=3">3</a></li>
+    <li class="page-item"><a class="page-link" href="/pages/articles.php?page=1">1</a></li>
+    <li class="page-item"><a class="page-link" href="/pages/articles.php?page=2">2</a></li>
+    <li class="page-item"><a class="page-link" href="/pages/articles.php?page=3">3</a></li>
     <li class="page-item"><a class="page-link" href="#">Next</a></li>
   </ul>
 </nav>

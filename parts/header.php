@@ -15,42 +15,41 @@ session_start();
 <body>
 
 <header>
-<nav class="navbar navbar-expand-lg navbar-dark bg-none">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">ByMikiii</a>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a href="/pages/zoznamPouzivatelov.php" class= "btn btn-light nav-btn">List of users</a>
-        </li>
-        <li class="nav-item">
-        <a href="/pages/articles.php?page=1" class= "btn btn-light nav-btn">Articles</a>
-        </li>
-        <li class="nav-item">
-        <a href="/pages/createArticle.php" class= "btn btn-light nav-btn">Create Article</a>
-        </li>
-        <li class="nav-item">
-        <a href="/C2S/" class= "btn btn-light nav-btn">C2S</a>
-        </li>
-      </ul>
-      <?php if (!isset($_SESSION["username"])) : ?>
-      <div>
-        <a href="/pages/login.php" class= "btn btn-light">Login</a>
-        <a href="/pages/register.php" class= "btn btn-light">Register</a>
-      </div>
-      <?php else : ?>
-        <div class="d-flex aling-items-center">
-             
-        <div class="login-data">           
-        <a href="/pages/profile.php?id=<?php echo $_SESSION["user_id"]?>" ><img class='profile-picture' src="<?php echo $_SESSION["avatar-path"]?>" alt="Profile Picture"></a>
-
+<nav class="navbar navbar-dark bg-node navbar-expand-md">
+    <img src="/Images/feelsgoodman.png" id='navbar-brand-img' alt="FeelsGoodMan">
+    <a href="/" class="navbar-brand">ByMikiii</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="/pages/zoznamPouzivatelov.php" class="nav-link">List of users</a></li>
+            <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/pages/articles.php" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Articles
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="/pages/articles.php">Articles Page</a></li>
+            <li><a class="dropdown-item" href="/pages/createArticle.php">Create Article</a></li>
+          </ul>
+            <li class="nav-item"><a href="/C2S/" class="nav-link">C2S</a></li>
+        </ul>
+            <?php if (!isset($_SESSION["username"])) : ?>
+               <ul class="navbar-nav ms-auto">
+              <li id='login-button' class="nav-item"><a href="/pages/login.php" class="nav-link">Login</a></li>
+              <li id='register-button' class="nav-item"><a href="/pages/register.php" class="nav-link">Register</a></li>
+              </ul>
+            <?php else : ?>
+              <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+              <div class="login-data">           
+             <a href="/profile/?username=<?php echo $_SESSION["username"]?>" ><img class='profile-picture' src="<?php echo $_SESSION["avatar-path"]?>" alt="Profile Picture"></a>
             <span id="login-username"> <?php echo $_SESSION["username"] ?></span>
-
             </div>
-              <a href="/phpscripts/logout.php" class= "btn btn-danger">Log Out</a>
-        </div>
-        <?php endif; ?>
+            </li>
+              <li class="nav-item"><a href="/phpscripts/logout.php" class="nav-link">Log Out</a></li>
+              </ul>
+            <?php endif; ?>  
     </div>
-  </div>
 </nav>
 </header>

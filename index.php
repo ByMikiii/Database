@@ -2,11 +2,14 @@
 $pathToIcon = '/Images/monkaH.png';
 $title = 'Main Page';
 require './phpscripts/connection.php';
-include('./parts/header.php')
+include('./parts/header.php');
+
+$message = isset($_GET['message']) ? $_GET["message"] : "";
 ?>
 
-<main class="container">
+<p class='index-message'><?php echo $message?></p>
 
+<main class="container">
 <div style="width: 500px; margin-left: auto; margin-right: auto; margin-top: 80px;" id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
