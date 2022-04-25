@@ -7,16 +7,16 @@ include('./parts/header.php')
 
 <main class="container">
 
-<div style="width: 500px;   margin-left: auto; margin-right: auto; margin-top: 80px;" id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<div style="width: 500px; margin-left: auto; margin-right: auto; margin-top: 80px;" id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="./images/peepohappy.jpg" class="d-block w-100" alt="Ležiaci pes">
+      <img src="/Images/peepohappy.jpg" class="d-block" alt="Ležiaci pes">
     </div>
     <div class="carousel-item">
-      <img src="./images/sleepin.jpeg" class="d-block w-100" alt="Spiaci pes">
+      <img src="/Images/sleepin.jpeg" class="d-block" alt="Spiaci pes">
     </div>
     <div class="carousel-item">
-      <img src="./images/klubina.jpeg" class="d-block w-100" alt="Klubina">
+      <img src="/Images/lying.jpg" class="d-block" alt="Ležiaci pes">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -29,6 +29,7 @@ include('./parts/header.php')
   </button>
 </div>
 </main>
+
 <h2 id='h2-welcome'>Welcome! 😘</h2>
 
   <?php include('./parts/footer.php')?>

@@ -203,3 +203,30 @@ width: 80px;
   bottom: 4px;
   right: 4px;
 }
+
+@media (max-width: 480px) {
+  .container{
+    padding: 0;
+  }
+  .d-block{
+    height: 100% !important;
+    width:  100% !important;
+  }
+  .carousel-inner,
+  .carousel-item{
+      width: 400px;
+      height: 320px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .carousel-control-next{
+    right: 35px;
+  }
+  .carousel-control-prev{
+    left: 35px;
+  }
+
+  body{
+    width: 514px;
+  }
+}
