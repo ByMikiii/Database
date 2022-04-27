@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("../Images/background.jpg");
+  background-color: rgb(41, 41, 41);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 99.5vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+h1 {
+  text-align: center;
+  color: rgb(187, 132, 29);
+  font-size: 54px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.center {
+  background-color: rgba(24, 24, 24, 0.664);
+  margin: 125px auto;
+  height: 460px;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid rgb(187, 132, 29);
+}
+.center .question {
+  position: relative;
+  top: 2%;
+  font-size: 20px;
+  margin: 25px 15px 45px 15px;
+  font-weight: bold;
+  color: rgb(187, 132, 29);
+}
+.btn {
+  margin: 15px 50px;
+  border: none;
+  background-color: rgba(211, 211, 211, 0.363);
+  font-size: 16px;
+  min-width: 300px;
+  height: 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  border: 1px solid rgb(187, 132, 29);
+}
+
+.btn:active,
+.btn:hover {
+  background-color: rgba(158, 158, 158, 0.397);
+}
+.answer-status {
+  font-weight: bold;
+}
+.score {
+  margin-top: 50px;
+  margin-left: 150px;
+  color: white;
+  width: 100px;
+  position: relative;
+  bottom: 15px;
+}
+.next-quest {
+  border: none;
+  background-color: rgba(211, 211, 211, 0.363);
+  font-size: 16px;
+  width: 90px;
+  height: 50px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+}
+.next-quest:active,
+.next-quest:hover {
+  background-color: rgba(158, 158, 158, 0.397);
+}
+.next-quest {
+  margin-left: 240px;
+  position: relative;
+  bottom: 55px;
+  border: 0.1px solid rgb(187, 132, 29);
+}
+.score-number {
+  color: rgb(187, 132, 29);
+  font-weight: bold;
+}
+footer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: rgba(255, 255, 255, 0.527);
+}

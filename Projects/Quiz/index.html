@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz ByMikiii</title>
+    <link rel="stylesheet" href="./CSS/app.css" />
+    <meta class="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./Images/iconka.png" type="icon" />
+  </head>
+  <body>
+    <h1>Quiz</h1>
+
+    <div class="center">
+      <div id="question" class="question">Question</div>
+
+      <div class="answer">
+        <button id="answer1" class="btn" onclick="answer(1)">Answer1</button>
+      </div>
+
+      <div class="answer">
+        <button id="answer2" class="btn" onclick="answer(2)">Answer2</button>
+      </div>
+
+      <div class="answer">
+        <button id="answer3" class="btn" onclick="answer(3)">Answer3</button>
+      </div>
+
+      <div class="answer">
+        <button id="answer4" class="btn" onclick="answer(4)">Answer4</button>
+      </div>
+
+      <div class="answer-status" id="answer-status"></div>
+
+      <div class="score">
+        <p>SKÓRE:</p>
+        <p id="score-number">---</p>
+      </div>
+
+      <div class="btn-ord">
+        <button class="next-quest" onclick="nextQuestion()">
+          Ďalšia Otázka
+        </button>
+      </div>
+    </div>
+    <script src="./JS/quiz-script.js"></script>
+    <footer>ByMikiii</footer>
+  </body>
+</html>

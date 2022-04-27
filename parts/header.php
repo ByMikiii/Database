@@ -23,7 +23,9 @@ session_start();
     </button>
     <div class="navbar-collapse collapse" id="navbar">
         <ul class="navbar-nav">
+
             <li class="nav-item"><a href="/pages/zoznamPouzivatelov.php" class="nav-link">List of users</a></li>
+
             <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="/pages/articles.php" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Articles
@@ -32,6 +34,18 @@ session_start();
             <li><a class="dropdown-item" href="/pages/articles.php">Articles Page</a></li>
             <li><a class="dropdown-item" href="/pages/createArticle.php">Create Article</a></li>
           </ul>
+
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/pages/articles.php" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Projects
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="/Projects/CountdownTimer/">CountdownTimer</a></li>
+            <li><a class="dropdown-item" href="/Projects/Quiz/">Quiz</a></li>
+            <li><a class="dropdown-item" href="/Projects/Todo/">Todo</a></li>
+            <li><a class="dropdown-item" href="/Projects/CoinFlip/">Coin Flip</a></li>
+          </ul>
+          
             <li class="nav-item"><a href="/C2S/" class="nav-link">C2S</a></li>
         </ul>
             <?php if (!isset($_SESSION["username"])) : ?>

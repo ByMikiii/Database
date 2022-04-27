@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta class="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/app.css" />
+    <link rel="icon" href="./Images/iconka.png" type="icon" />
+    <title>Todo ByMikiii</title>
+  </head>
+  <body>
+    <h1>Todo</h1>
+
+    <div class="boxes">
+      <div class="todo-list" id="todo-list1">
+        <div class="todo1" id="todo1">
+          <div class="heading">
+            <input
+              type="text"
+              class="list-class"
+              id="heading1"
+              maxlength="16"
+              placeholder="To-Do List #1"
+            />
+            <div id="plus">
+              <img
+                src="./Images/plus.png"
+                alt="Plus-icon"
+                class="plusicon"
+                onclick="plusTask(1)"
+              />
+            </div>
+            <div id="minus">
+              <img
+                src="./Images/minus.png"
+                alt="Minus-icon"
+                class="minusicon"
+                onclick="minusTask(1)"
+              />
+            </div>
+            <div id="erase">
+              <img
+                src="./Images/erase.png"
+                alt="Erase-icon"
+                class="eraseicon"
+                onclick="erase(1)"
+              />
+            </div>
+          </div>
+          <div class="tasks">
+            <div id="task11" class="task">
+              <input
+                type="text"
+                class="task-class"
+                id="taski11"
+                maxlength="16"
+                placeholder="Task #1"
+              />
+              <input
+                type="checkbox"
+                id="chtask11"
+                class="checkbox-task"
+                onclick="pushtask(11)"
+              />
+            </div>
+            <div id="task12" class="task">
+              <input
+                type="text"
+                class="task-class"
+                id="taski12"
+                maxlength="16"
+                placeholder="Task #2"
+              />
+              <input
+                type="checkbox"
+                id="chtask12"
+                class="checkbox-task"
+                onclick="pushtask(12)"
+              />
+            </div>
+            <div id="task13" class="task">
+              <input
+                type="text"
+                class="task-class"
+                id="taski13"
+                maxlength="16"
+                placeholder="Task #3"
+              />
+              <input
+                type="checkbox"
+                id="chtask13"
+                class="checkbox-task"
+                onclick="pushtask(13)"
+              />
+            </div>
+            <div id="task14" class="task">
+              <input
+                type="text"
+                class="task-class"
+                id="taski14"
+                maxlength="16"
+                placeholder="Task #4"
+              />
+              <input
+                type="checkbox"
+                id="chtask14"
+                class="checkbox-task"
+                onclick="pushtask(14)"
+              />
+            </div>
+            <div id="task15" class="task">
+              <input
+                type="text"
+                class="task-class"
+                id="taski15"
+                maxlength="16"
+                placeholder="Task #5"
+              />
+              <input
+                type="checkbox"
+                id="chtask15"
+                class="checkbox-task"
+                onclick="pushtask(15)"
+              />
+            </div>
+            <div id="task16" class="task">
+              <input
+                type="text"
+                class="task-class"
+                id="taski16"
+                maxlength="16"
+                placeholder="Task #6"
+              />
+              <input
+                type="checkbox"
+                id="chtask16"
+                class="checkbox-task"
+                onclick="pushtask(16)"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="todo-list" id="todo-list2">
+        <div class="todo1" id="todo1">
+          <input
+            type="text"
+            class="list-class"
+            id="heading2"
+            maxlength="16"
+            placeholder="To-Do List #2"
+          />
+          <div id="plus">
+            <img
+              src="./Images/plus.png"
+              alt="Plus-icon"
+              class="plusicon"
+              onclick="plusTask(2)"
+            />
+          </div>
+          <div id="minus">
+            <img
+              src="./Images/minus.png"
+              alt="Minus-icon"
+              class="minusicon"
+              onclick="minusTask(2)"
+            />
+          </div>
+          <div id="erase">
+            <img
+              src="./Images/erase.png"
+              alt="Erase-icon"
+              class="eraseicon"
+              onclick="erase(2)"
+            />
+          </div>
+          <div id="task21" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski21"
+              maxlength="16"
+              placeholder="Task #1"
+            />
+            <input
+              type="checkbox"
+              id="chtask21"
+              class="checkbox-task"
+              onclick="pushtask(21)"
+            />
+          </div>
+          <div id="task22" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski22"
+              maxlength="16"
+              placeholder="Task #2"
+            />
+            <input
+              type="checkbox"
+              id="chtask22"
+              class="checkbox-task"
+              onclick="pushtask(22)"
+            />
+          </div>
+          <div id="task23" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski23"
+              maxlength="16"
+              placeholder="Task #3"
+            />
+            <input
+              type="checkbox"
+              id="chtask23"
+              class="checkbox-task"
+              onclick="pushtask(23)"
+            />
+          </div>
+          <div id="task24" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski24"
+              maxlength="16"
+              placeholder="Task #4"
+            />
+            <input
+              type="checkbox"
+              id="chtask24"
+              class="checkbox-task"
+              onclick="pushtask(24)"
+            />
+          </div>
+          <div id="task25" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski25"
+              maxlength="16"
+              placeholder="Task #5"
+            />
+            <input
+              type="checkbox"
+              id="chtask25"
+              class="checkbox-task"
+              onclick="pushtask(25)"
+            />
+          </div>
+          <div id="task26" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski26"
+              maxlength="16"
+              placeholder="Task #6"
+            />
+            <input
+              type="checkbox"
+              id="chtask26"
+              class="checkbox-task"
+              onclick="pushtask(26)"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="todo-list" id="todo-list3">
+        <div class="todo1" id="todo1">
+          <input
+            type="text"
+            class="list-class"
+            id="heading3"
+            maxlength="16"
+            placeholder="To-Do List #3"
+          />
+          <div id="plus">
+            <img
+              src="./Images/plus.png"
+              alt="Plus-icon"
+              class="plusicon"
+              onclick="plusTask(3)"
+            />
+          </div>
+          <div id="minus">
+            <img
+              src="./Images/minus.png"
+              alt="Minus-icon"
+              class="minusicon"
+              onclick="minusTask(3)"
+            />
+          </div>
+          <div id="erase">
+            <img
+              src="./Images/erase.png"
+              alt="Erase-icon"
+              class="eraseicon"
+              onclick="erase(3)"
+            />
+          </div>
+          <div id="task31" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski31"
+              maxlength="16"
+              placeholder="Task #1"
+            />
+            <input
+              type="checkbox"
+              id="chtask31"
+              class="checkbox-task"
+              onclick="pushtask(31)"
+            />
+          </div>
+          <div id="task32" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski32"
+              maxlength="16"
+              placeholder="Task #2"
+            />
+            <input
+              type="checkbox"
+              id="chtask32"
+              class="checkbox-task"
+              onclick="pushtask(32)"
+            />
+          </div>
+          <div id="task33" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski33"
+              maxlength="16"
+              placeholder="Task #3"
+            />
+            <input
+              type="checkbox"
+              id="chtask33"
+              class="checkbox-task"
+              onclick="pushtask(33)"
+            />
+          </div>
+          <div id="task34" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski34"
+              maxlength="16"
+              placeholder="Task #4"
+            />
+            <input
+              type="checkbox"
+              id="chtask34"
+              class="checkbox-task"
+              onclick="pushtask(34)"
+            />
+          </div>
+          <div id="task35" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski35"
+              maxlength="16"
+              placeholder="Task #5"
+            />
+            <input
+              type="checkbox"
+              id="chtask35"
+              class="checkbox-task"
+              onclick="pushtask(35)"
+            />
+          </div>
+          <div id="task36" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski36"
+              maxlength="16"
+              placeholder="Task #6"
+            />
+            <input
+              type="checkbox"
+              id="chtask36"
+              class="checkbox-task"
+              onclick="pushtask(36)"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="boxes2">
+      <div class="todo-list2" id="todo-list4">
+        <div class="todo1" id="todo1">
+          <input
+            type="text"
+            class="list-class"
+            id="heading4"
+            maxlength="16"
+            placeholder="To-Do List #4"
+          />
+          <div id="plus">
+            <img
+              src="./Images/plus.png"
+              alt="Plus-icon"
+              class="plusicon"
+              onclick="plusTask(4)"
+            />
+          </div>
+          <div id="minus">
+            <img
+              src="./Images/minus.png"
+              alt="Minus-icon"
+              class="minusicon"
+              onclick="minusTask(4)"
+            />
+          </div>
+          <div id="erase">
+            <img
+              src="./Images/erase.png"
+              alt="Erase-icon"
+              class="eraseicon"
+              onclick="erase(4)"
+            />
+          </div>
+          <div id="task41" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski41"
+              maxlength="16"
+              placeholder="Task #1"
+            />
+            <input
+              type="checkbox"
+              id="chtask41"
+              class="checkbox-task"
+              onclick="pushtask(41)"
+            />
+          </div>
+          <div id="task42" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski42"
+              maxlength="16"
+              placeholder="Task #2"
+            />
+            <input
+              type="checkbox"
+              id="chtask42"
+              class="checkbox-task"
+              onclick="pushtask(42)"
+            />
+          </div>
+          <div id="task43" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski43"
+              maxlength="16"
+              placeholder="Task #3"
+            />
+            <input
+              type="checkbox"
+              id="chtask43"
+              class="checkbox-task"
+              onclick="pushtask(43)"
+            />
+          </div>
+          <div id="task44" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski44"
+              maxlength="16"
+              placeholder="Task #4"
+            />
+            <input
+              type="checkbox"
+              id="chtask44"
+              class="checkbox-task"
+              onclick="pushtask(44)"
+            />
+          </div>
+          <div id="task45" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski45"
+              maxlength="16"
+              placeholder="Task #5"
+            />
+            <input
+              type="checkbox"
+              id="chtask45"
+              class="checkbox-task"
+              onclick="pushtask(45)"
+            />
+          </div>
+          <div id="task46" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski46"
+              maxlength="16"
+              placeholder="Task #6"
+            />
+            <input
+              type="checkbox"
+              id="chtask46"
+              class="checkbox-task"
+              onclick="pushtask(46)"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="todo-list2" id="todo-list5">
+        <div class="todo1" id="todo1">
+          <input
+            type="text"
+            class="list-class"
+            id="heading5"
+            maxlength="16"
+            placeholder="To-Do List #5"
+          />
+          <div id="plus">
+            <img
+              src="./Images/plus.png"
+              alt="Plus-icon"
+              class="plusicon"
+              onclick="plusTask(5)"
+            />
+          </div>
+          <div id="minus">
+            <img
+              src="./Images/minus.png"
+              alt="Minus-icon"
+              class="minusicon"
+              onclick="minusTask(5)"
+            />
+          </div>
+          <div id="erase">
+            <img
+              src="./Images/erase.png"
+              alt="Erase-icon"
+              class="eraseicon"
+              onclick="erase(5)"
+            />
+          </div>
+          <div id="task51" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski51"
+              maxlength="16"
+              placeholder="Task #1"
+            />
+            <input
+              type="checkbox"
+              id="chtask51"
+              class="checkbox-task"
+              onclick="pushtask(51)"
+            />
+          </div>
+          <div id="task52" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski52"
+              maxlength="16"
+              placeholder="Task #2"
+            />
+            <input
+              type="checkbox"
+              id="chtask52"
+              class="checkbox-task"
+              onclick="pushtask(52)"
+            />
+          </div>
+          <div id="task53" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski53"
+              maxlength="16"
+              placeholder="Task #3"
+            />
+            <input
+              type="checkbox"
+              id="chtask53"
+              class="checkbox-task"
+              onclick="pushtask(53)"
+            />
+          </div>
+          <div id="task54" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski54"
+              maxlength="16"
+              placeholder="Task #4"
+            />
+            <input
+              type="checkbox"
+              id="chtask54"
+              class="checkbox-task"
+              onclick="pushtask(54)"
+            />
+          </div>
+          <div id="task55" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski55"
+              maxlength="16"
+              placeholder="Task #5"
+            />
+            <input
+              type="checkbox"
+              id="chtask55"
+              class="checkbox-task"
+              onclick="pushtask(55)"
+            />
+          </div>
+          <div id="task56" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski56"
+              maxlength="16"
+              placeholder="Task #6"
+            />
+            <input
+              type="checkbox"
+              id="chtask56"
+              class="checkbox-task"
+              onclick="pushtask(56)"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="todo-list2" id="todo-list6">
+        <div class="todo1" id="todo1">
+          <div id="heading">
+            <input
+              type="text"
+              class="list-class"
+              id="heading6"
+              maxlength="16"
+              placeholder="To-Do List #6"
+            />
+            <div id="plus">
+              <img
+                src="./Images/plus.png"
+                alt="Plus-icon"
+                class="plusicon"
+                onclick="plusTask(6)"
+              />
+            </div>
+            <div id="minus">
+              <img
+                src="./Images/minus.png"
+                alt="Minus-icon"
+                class="minusicon"
+                onclick="minusTask(6)"
+              />
+            </div>
+            <div id="erase">
+              <img
+                src="./Images/erase.png"
+                alt="Erase-icon"
+                class="eraseicon"
+                onclick="erase(6)"
+              />
+            </div>
+          <div id="task61" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski61"
+              maxlength="16"
+              placeholder="Task #1"
+            />
+            <input
+              type="checkbox"
+              id="chtask61"
+              class="checkbox-task"
+              onclick="pushtask(61)"
+            />
+          </div>
+          <div id="task62" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski62"
+              maxlength="16"
+              placeholder="Task #2"
+            />
+            <input
+              type="checkbox"
+              id="chtask62"
+              class="checkbox-task"
+              onclick="pushtask(62)"
+            />
+          </div>
+          <div id="task63" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski63"
+              maxlength="16"
+              placeholder="Task #3"
+            />
+            <input
+              type="checkbox"
+              id="chtask63"
+              class="checkbox-task"
+              onclick="pushtask(63)"
+            />
+          </div>
+          <div id="task64" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski64"
+              maxlength="16"
+              placeholder="Task #4"
+            />
+            <input
+              type="checkbox"
+              id="chtask64"
+              class="checkbox-task"
+              onclick="pushtask(64)"
+            />
+          </div>
+          <div id="task65" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski65"
+              maxlength="16"
+              placeholder="Task #5"
+            />
+            <input
+              type="checkbox"
+              id="chtask65"
+              class="checkbox-task"
+              onclick="pushtask(65)"
+            />
+          </div>
+          <div id="task66" class="task">
+            <input
+              type="text"
+              class="task-class"
+              id="taski66"
+              maxlength="16"
+              placeholder="Task #6"
+            />
+            <input
+              type="checkbox"
+              id="chtask66"
+              class="checkbox-task"
+              onclick="pushtask(66)"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="plus-minus" id="plus-minus">
+      <div class="list-plus">
+        <img
+          src="./Images/plus.png"
+          alt="Plus-icon"
+          class="plus-list"
+          onclick="plusList()"
+        />
+      </div>
+      <div class="list-minus">
+        <img
+          src="./Images/minus.png"
+          alt="Minus-icon"
+          class="minus-list"
+          onclick="minusList()"
+        />
+      </div>
+    </div>
+    <footer>ByMikiii</footer>
+    <script src="./JS/todo-script.js"></script>
+  </body>
+</html>

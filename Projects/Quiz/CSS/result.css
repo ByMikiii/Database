@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("/Quiz/Images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 99.5vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+h1 {
+  text-align: center;
+  color: rgb(187, 132, 29);
+  font-size: 54px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+p {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20%;
+}
+.score {
+  color: rgb(187, 132, 29);
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
