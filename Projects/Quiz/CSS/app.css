@@ -90,6 +90,16 @@ h1 {
 footer {
   position: absolute;
   bottom: 10px;
-  right: 10px;
+  left: 10px;
   color: rgba(255, 255, 255, 0.527);
+}
+#result-tab{
+  background-color: rgb(24, 24, 24);
+  display: none;
+}
+#result-text{
+  position: relative;
+  color: aliceblue;
+  top: 50%;
+  transform: translateY(-50%);
 }

@@ -1,65 +1,31 @@
 body {
   background-image: url("background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 94vh;
-  position: relative;
-}
-body h1 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+}
+.timer{
+  text-align: center;
+  position: relative;
+  top: 125px;
+}
+h1{
+  margin-top: 140px;
+}
+footer{
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+.time{
   font-size: 64px;
-  position: absolute;
-  top: 18rem;
-  right: 58rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
-#timer {
-  background-color: black;
-  width: 200px;
-  display: flex;
-}
-
-.timer .timer_days {
-  font-size: 48px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  position: absolute;
-  top: 28rem;
-  right: 80rem;
-}
-.timer .timer_hours {
-  font-size: 48px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  position: absolute;
-  top: 28rem;
-  right: 70rem;
-}
-.timer .timer_minutes {
-  font-size: 48px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  position: absolute;
-  top: 28rem;
-  right: 60rem;
-}
-.timer .timer_seconds {
-  font-size: 48px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  position: absolute;
-  top: 28rem;
-  right: 50rem;
-}
-span {
-  font-size: 16px;
-  text-align: center;
-  position: relative;
-  bottom: 60px;
-}
-p {
-  text-align: center;
-}
-footer {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  color: rgb(252, 252, 252);
-  background-color: rgba(0, 0, 0, 0.288);
+.timer_element{
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 30px;
 }

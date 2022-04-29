@@ -97,6 +97,7 @@ function answer(answerNumber) {
 }
 
 function checkAnswer() {
+  if(questionNumber < 11){
   if (selectedAnswer === questions[questionNumber - 1].correct) {
     document.getElementById(selectedAnswer).style.background = "green";
     score++;
@@ -112,6 +113,13 @@ function checkAnswer() {
 
     document.getElementById("answer-status").style.color = "red";
     document.getElementById("answer-status").innerHTML = incorrect;
+    }
+  }
+  if (questionNumber == 11) { 
+    document.getElementById("questions-tab").style.display = "none";
+    document.getElementById("result-tab").style.display = "block";
+    document.getElementById("result-text").innerHTML = "Správne ste odpovedali "+score+" z 10 otázok.";
+    console.log('gdfgd');
   }
 }
 
@@ -131,9 +139,14 @@ function checkQuesNumber() {
 
 //taskS
 function nextQuestion() {
+  if (questionNumber == 10) { 
+    questionNumber = 11;
+    checkAnswer();
+  }
   if (questionNumber < 10) {
+    console.log(questionNumber);
     if (selectedAnswer === "") {
-      alert("Please, answer the question.");
+      alert("Prosím, odpovedajte na otázku.");
     }
     if (selectedAnswer !== "") {
       document.getElementById(selectedAnswer).style.background = defaultaskBg;
