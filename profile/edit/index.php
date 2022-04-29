@@ -29,9 +29,11 @@ $bio = isset($user['bio']) ? $user['bio'] : 'Unknown';
 </form>
 
     <h1 class='profile-editheading'>Edit Account</h1>
-  <form action="../phpscripts/editscript.php" method=POST class='profile-editform'>
+  <form action="../../phpscripts/editscript.php" method=POST class='profile-editform'>
 
   <img id='profile-editprofilepicture' src="<?php echo $user['avatar'] ?>" alt="Profile Picture"><br>
+
+  <input type="hidden" id="userUsername" name="userUsername" value='<?php echo $userUsername?>'>
 
   <label for="username" class='profile-editlabel'>Username</label><br>
   <input type="text" id="edit-username" name="username" value='<?php echo $user['username']?>'><br>
