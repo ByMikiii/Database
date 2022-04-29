@@ -349,29 +349,6 @@ color: rgba(158, 158, 158, 0.521);
   left: 50%;
   transform: translateX(-50%);
 }
-
-#profile-editwindow{
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--main-bg-color);
-  margin-top: 60px;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-#profile-editheading{
-  color: white;
-  margin-top: 1.5%;
-}
-#profile-editform{
-  top: 20%;
-  
-}
-.profile-editlabel{
-  color: white;
-}
 #profile-editprofilepicture{
   position: relative;
   margin-top: 2.5%;
@@ -384,8 +361,29 @@ color: rgba(158, 158, 158, 0.521);
 #profile-editprofilepicture:hover{
   filter: brightness(150%);
 }
-#profile-editsubmitformbutton{
+.profile-editsubmitformbutton{
   background-color: #0059ff;
   border-radius: 2px;
   color: white;
+}
+.edit-arrowback{
+  position: absolute;
+  width: 42px;
+  filter: invert(60%);
+  left: 25px;
+  top: 80px;
+}
+.edit-arrowback:hover{
+  filter: invert(80%);
+}
+.profile-editwindow{
+  text-align: center;
+  color: white;
+}
+.profile-editheading{
+  margin-top: 20px;
+  margin-bottom: 2%;
+}
+#changepassword-heading{
+  margin-bottom: 10%;
 }

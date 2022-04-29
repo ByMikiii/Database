@@ -1,5 +1,10 @@
 <?php
-$userUsername = $_GET["username"];
+if(isset($_GET["username"])){
+  $userUsername = $_GET["username"];
+}else { 
+  $uuu = $_SESSION["username"];
+  $userUsername = $uuu;
+}
 $title = 'Profile - '.$userUsername;
 $pathToIcon = '/Images/monkaH.png';
 require '../phpscripts/connection.php';
@@ -54,38 +59,10 @@ $bio = isset($user['bio']) ? $user['bio'] : 'Unknown';
 </div>
 
 <?php if($sessionUsername == $user['username']) : ?>
-  <button type="button" class="btn" id='profile-editbutton'>Edit Account</button>
-
-  <div id='profile-editwindow'>
-    <h1 id='profile-editheading'>Edit Account</h1>
-  <form action="../phpscripts/editscript.php" method=POST id='profile-editform'>
-
-  <img id='profile-editprofilepicture' src="<?php echo $user['avatar'] ?>" alt="Profile Picture"><br>
-
-  <label for="username" class='profile-editlabel'>Username</label><br>
-  <input type="text" id="edit-username" name="username" value='<?php echo $user['username']?>'><br>
-
-  <label for="email" class='profile-editlabel'>Email</label><br>
-  <input type="email" id="edit-email" name="email" value='<?php echo $user['email']?>'><br>
-
-  <label for="firstname" class='profile-editlabel'>First name</label><br>
-  <input type="text" id="edit-firstname" name="firstname" value='<?php echo $firstname?>'><br>
-
-  <label for="lastname" class='profile-editlabel'>Last name</label><br>
-  <input type="text" id="edit-lastname" name="lastname" value='<?php echo $lastname?>'><br>
-
-  <label for="dateofbirth" class='profile-editlabel'>Date of Birth</label><br>
-  <input type="date" id="edit-dateofbirth" name="dateofbirth" value='<?php echo $dateOfBirth?>'><br>
-
-  <input type="hidden" name="usernameprofile" value="<?php echo $userUsername; ?>">
-  <p>Change Password?</p>
-
-  <button type="submit" class="btn" id='profile-editsubmitformbutton'>Submit</button>
-
-  <p>Error Message</p>
-
+  <form action="./edit/" method='POST'>
+  <input type="hidden" id="userUsername" name="userUsername" value='<?php echo $userUsername?>'>
+  <button type="submit" class="btn" id='profile-editbutton'>Edit Account</button>
   </form>
-  </div>
 <?php endif ?>
 
 <?php
