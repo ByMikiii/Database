@@ -13,21 +13,11 @@ $avatarPath = $_POST['userAvatar'];
 
 <img id='profile-editprofilepicture' src="<?php echo $avatarPath?>" alt="Profile Picture"><br>
 
-<form method="POST" action="../../../../phpscripts/changeAvatar.php" enctype="multipart/form-data">
-
-  <input type="file" name="choosefile" value="" />
-  <input type="hidden" name="userUsername" value='<?php echo $username?>'>
-
-  <div>
-
-    <button type="submit" name="uploadfile">
-
-      UPLOAD
-
-    </button>
-
-  </div>
-
+<form action="../../../../phpscripts/changeAvatar.php" method="post" enctype="multipart/form-data">
+  Select image to upload:
+  <input type="hidden" name="userUsername" value="<?php echo $userUsername?>">
+  <input type="file" name="fileToUpload" id="fileToUpload">
+  <input type="submit" value="Upload Image" name="submit">
 </form>
 
 <?php
