@@ -1,2 +1,8 @@
-phpscripts/uploads/*
-Images/*
+*.jpg
+*.jpeg
+*.jpe
+*.jif
+*.jfif
+*.jfi
+*.png
+*.gif
